@@ -6,7 +6,8 @@
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
 
 
-Content Based Recommender System recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie.
+In this project, a content-based suggested system is utilized to find comparable films to the one the user is seeking for by using cosine similarity.
+Also, sentiment analysis is done on the reviews of the movie the user is searching for. Sentiment analysis is the process of analyzing digital text to determine if the emotional tone of the message is positive, negative, or neutral.
 
 The details of the movies(title, genre, runtime, rating, poster, etc) are fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, and using the IMDB id of the movie in the API, I did web scraping to get the reviews given by the user in the IMDB site using `beautifulsoup4` and performed sentiment analysis on those reviews.
 
@@ -26,7 +27,7 @@ Create an account in https://www.themoviedb.org/, click on the `API` link from t
 
 ## Architecture
 
-![Recommendation App](https://user-images.githubusercontent.com/36665975/168742738-5435cf76-1a42-4d87-94b4-999e5bfc48d3.png)
+![image](Images/Architecture.png)
 
 ## Similarity Score : 
 
@@ -37,7 +38,9 @@ Create an account in https://www.themoviedb.org/, click on the `API` link from t
 ## How Cosine Similarity works?
   Cosine similarity is a metric used to measure how similar the documents are irrespective of their size. Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional space. The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. The smaller the angle, higher the cosine similarity.
   
-  ![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
+ <img src="Images/cosine%20sim.png" alt="image" width="500"/>
+
+
 
 
 ### Sources of the datasets 
@@ -46,3 +49,22 @@ Create an account in https://www.themoviedb.org/, click on the `API` link from t
 2. [List of movies in 2018](https://en.wikipedia.org/wiki/List_of_American_films_of_2018)
 3. [List of movies in 2019](https://en.wikipedia.org/wiki/List_of_American_films_of_2019)
 
+## Sample Images
+
+1. Homepage
+   ![image](Images/Sample%201.png)
+   
+2. Autocomplete
+   ![image](Images/Sample%202.png)
+   
+3. Movie Description
+   ![image](Images/Sample%203.png)
+   
+4. Cast
+   ![image](Images/Sample%204.png)
+   
+5. Sentiment Analysis
+   ![image](Images/Sample%205.png)
+   
+6. Recommending Similar Movies
+   ![image](Images/Sample%206.png)
